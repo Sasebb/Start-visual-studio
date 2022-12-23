@@ -1,0 +1,15 @@
+import random
+
+number = random.randrange (1,100)
+guess = int (input ("guess a number between 1 and 100: "))
+
+while guess != number:
+    if guess < number:
+        print ("You are an idiot, guess higher")
+        guess = int (input ("\nguess a number between 1 and 100: "))
+    else:
+        print ("Are you dumb? Guess lower!")
+        guess = int (input ("\nguess a number between 1 and 100: "))
+
+
+print ("You have guessed the number correctly!")
